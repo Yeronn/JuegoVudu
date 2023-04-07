@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2626508943953115579}
   - component: {fileID: 2626508943953115576}
   - component: {fileID: 2626508943953115577}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Muneco
   m_TagString: Muneco
   m_Icon: {fileID: 0}
@@ -99,6 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeaa4b16a6e7274894ff6d7773a1e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasElement: 0
+  hasArmor: 0
+  hasTypeAttack: 0
 --- !u!61 &2626508943953115576
 BoxCollider2D:
   m_ObjectHideFlags: 0

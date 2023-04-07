@@ -1,16 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+
+public enum Tags
+{
+    Unselected,
+    Element,
+    Armor,
+    TypeAttack,
+    SelectedElement,
+    SelectedArmor,
+    SelectedTypeAttack,
+    Options,
+    Muneco
+};
 
 public class DragDrop : MonoBehaviour
 {
-    RaycastHit2D hit;
-    Camera cam;
-    Vector3 pos;
-    Vector3 mousePos;
-    Transform focus;
-    bool isDrag;
-    bool tags;
+    //Drag and Drop Variables
+    private RaycastHit2D hit;
+    private Camera cam;
+    private Vector3 pos;
+    private Vector3 mousePos;
+    private Transform focus;
+    private bool isDrag;
+
+    //Tests
+    //bool Traking;
 
     private void Start()
     {
@@ -24,10 +41,7 @@ public class DragDrop : MonoBehaviour
         {
             hit = Physics2D.GetRayIntersection(cam.ScreenPointToRay(Input.mousePosition));
 
-            tags = hit.collider.CompareTag("Element") || hit.collider.CompareTag("Armor") ||
-            hit.collider.CompareTag("TypeAttack");
-
-            if (hit.collider != null && tags)
+            if (hit.collider != null)
             {
                 focus = hit.transform;
                 print("CLICKED = " + hit.collider.transform.name);
@@ -37,6 +51,14 @@ public class DragDrop : MonoBehaviour
             {
                 Debug.Log("Collider " +  hit.collider.transform.name);
             }
+
+            if (hit.collider.transform.parent.tag.Equals("Muneco"))
+                //hit.collider.CompareTag(Tags.SelectedTypeAttack.ToString())
+            {
+                Debug.Log("Este ya no es el padre "+hit.collider.transform.parent.tag);
+                Debug.Log(hit.collider.GetComponentInParent<Transform>().gameObject.tag.Equals("Muneco"));
+                hit.transform.gameObject.GetComponent<Option>().ReturnInitialPosition();
+            }
         }
         else if ((Input.GetMouseButtonUp(0) && isDrag == true))
         {
@@ -44,8 +66,7 @@ public class DragDrop : MonoBehaviour
         }
         else if (isDrag == true)
         {
-            if (!(hit.collider.CompareTag("Element") || hit.collider.CompareTag("Armor") ||
-            hit.collider.CompareTag("TypeAttack")))
+            if (hit.collider.CompareTag(Tags.Unselected.ToString())) /*"Unselected tag is not tracked"*/
             {
                 isDrag = false;
             }

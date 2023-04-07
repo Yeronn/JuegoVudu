@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3833355913607521908}
   - component: {fileID: 3833355913607521909}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ControllerDragDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

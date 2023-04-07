@@ -1,33 +1,49 @@
 using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Option : MonoBehaviour
 {
-    public void setTag(string option)
+    private Vector3 initialPosition;
+
+    private string mainTag;
+    private bool checkPower;
+
+    private void Start()
     {
-        Debug.Log("Poner  Tag");
-        transform.gameObject.tag = option;
-        StartCoroutine("SetPosition",option);
+        initialPosition = transform.position;
+        mainTag = transform.gameObject.tag;
+        checkPower = true;
     }
 
-    IEnumerator SetPosition(string option)
+    public void SetTag(Tags tag)
     {
-        Debug.Log("Empezando corutina");
-        yield return new WaitForSeconds(1);
+        Debug.Log($"Setting Unselected tag ");
+        transform.gameObject.tag = Tags.Unselected.ToString();
+        StartCoroutine("SetPosition",tag);
+    }
+
+    private IEnumerator SetPosition(Tags option)
+    {
+        Debug.Log("Empezando corutina setposition");
+        yield return new WaitForSeconds(1.5f);
+        Debug.Log($"Setting {option} tag ");
+        transform.gameObject.tag = option.ToString();
 
         switch (option)
         {
-            case "SelectedElement":
+            case Tags.SelectedElement:
                 transform.localPosition = new Vector3(0, 2.5f, 0);
                 break;
 
-            case "SelectedArmor":
+            case Tags.SelectedArmor:
                 transform.localPosition = new Vector3(-2.5f, 0, 0);
                 break;
 
-            case "SelectedTypeAttack":
+            case Tags.SelectedTypeAttack:
                 transform.localPosition = new Vector3(2.5f, 0, 0);
                 break;
 
@@ -35,5 +51,49 @@ public class Option : MonoBehaviour
                 break;
         }
         Debug.Log("Terminando corutina");
+    }
+
+    public void ReturnInitialPosition()
+    {
+        //Debug.Log(transform.parent.tag);
+        transform.parent = null;
+
+        if (transform.CompareTag(mainTag))
+        {
+            checkPower = false;
+        }
+
+        transform.gameObject.tag = Tags.Unselected.ToString();
+        Invoke("SetInitialPosition",0.5f);
+    }
+
+    private void SetInitialPosition()
+    {
+        Debug.Log("Return Initial Position" + initialPosition);
+        transform.position = initialPosition;
+
+        transform.SetParent(GameObject.Find(Tags.Options.ToString()).transform);
+        Debug.Log(transform.parent.name);
+        transform.gameObject.tag = mainTag;
+
+        if (checkPower)
+        {
+            if (mainTag.Equals(Tags.Element.ToString()))
+            {
+                GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasElement = false;
+                Debug.Log("hasElement: " + GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasElement);
+            }
+            else if (mainTag.Equals(Tags.Armor.ToString()))
+            {
+                GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasArmor = false;
+                Debug.Log("hasArmor: " + GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasArmor);
+            }
+            else if (mainTag.Equals(Tags.TypeAttack.ToString()))
+            {
+                GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasTypeAttack = false;
+                Debug.Log("hasTypeAttack: " + GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasTypeAttack);
+            }
+            checkPower = true;
+        }
     }
 }
