@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
@@ -14,6 +15,9 @@ public class MonstruoController : MonoBehaviour
 
     public string[] debilidadesMonstruo1;
     public string[] debilidadesMonstruo2;
+
+    public Text winMessage;
+
 
     private void Awake()
     {
@@ -31,7 +35,7 @@ public class MonstruoController : MonoBehaviour
                    )
                 {
                     Debug.Log("GANASATEE!!");
-                    Destroy(gameObject,1f);
+                    Invoke("UnActive", 2f);
                 }
                 else
                 {
@@ -46,7 +50,7 @@ public class MonstruoController : MonoBehaviour
                    )
                 {
                     Debug.Log("GANASATEE!!");
-                    Destroy(gameObject,1f);
+                    Invoke("UnActive", 2f);
                 }
                 else
                 {
@@ -56,6 +60,22 @@ public class MonstruoController : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    private void UnActive()
+    {
+        gameObject.SetActive(false);
+        //GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).SetActive(false);
+        Destroy(GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()));
+        //Destroy(GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).gameObject,0f);
+        winMessage.gameObject.SetActive(true);
+        Invoke("SceneMenu", 2f);
+    }
+
+    private void SceneMenu()
+    {
+        SceneManager.LoadScene("Menu");
+
     }
 
 }

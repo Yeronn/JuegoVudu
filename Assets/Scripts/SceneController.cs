@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public GameObject munecoPrefab, monstruoPrefab, monstruo2Prefab;
+    public GameObject munecoPrefab, monstruoPrefab;
     public static string previousScene;
     private enum Scenes
     {
@@ -24,7 +24,6 @@ public class SceneController : MonoBehaviour
         if (sceneName.Equals(Scenes.Menu.ToString()))
         {
             Destroy(GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()));
-            Destroy(GameObject.FindGameObjectWithTag("Monstruo"));
         }
 
         if (sceneName.Equals(Scenes.Inventario.ToString()))

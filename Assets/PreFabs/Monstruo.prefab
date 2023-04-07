@@ -130,6 +130,7 @@ MonoBehaviour:
   - Armor
   - TypeAttack
   debilidadesMonstruo2:
-  - sdfsd
-  - sdfsd
-  - sdfsd
+  - Element
+  - Armor
+  - TypeAttack
+  winMessage: {fileID: 0}
