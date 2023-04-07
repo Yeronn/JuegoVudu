@@ -44,3 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c684110aee77a8d43880e09c37ac9dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  munecoPrefab: {fileID: 2626508943953115575, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
+  monstruoPrefab: {fileID: 3627410727235315864, guid: 6e0c29d203e7c3d4da19d5691f83f9cc, type: 3}
+  monstruo2Prefab: {fileID: 8962054828593199679, guid: cf639b6d2076cf84bad49aa63865f62d, type: 3}

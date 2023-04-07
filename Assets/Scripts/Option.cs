@@ -1,6 +1,7 @@
 using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Text;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -61,6 +62,7 @@ public class Option : MonoBehaviour
         if (transform.CompareTag(mainTag))
         {
             checkPower = false;
+            Debug.Log("La main tag es " + mainTag);
         }
 
         transform.gameObject.tag = Tags.Unselected.ToString();
@@ -76,24 +78,32 @@ public class Option : MonoBehaviour
         Debug.Log(transform.parent.name);
         transform.gameObject.tag = mainTag;
 
+        Debug.Log("La main tag es " + mainTag + " y checkpower es " + checkPower + " y "+ Tags.Element.ToString());
+
         if (checkPower)
         {
+            Debug.Log("EEntro a cheeckpower");
             if (mainTag.Equals(Tags.Element.ToString()))
             {
-                GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasElement = false;
+                GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).GetComponent<Muneco>().hasElement = false;
                 Debug.Log("hasElement: " + GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasElement);
             }
             else if (mainTag.Equals(Tags.Armor.ToString()))
             {
-                GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasArmor = false;
+                GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).GetComponent<Muneco>().hasArmor = false;
                 Debug.Log("hasArmor: " + GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasArmor);
             }
             else if (mainTag.Equals(Tags.TypeAttack.ToString()))
             {
-                GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasTypeAttack = false;
+                GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).GetComponent<Muneco>().hasTypeAttack = false;
                 Debug.Log("hasTypeAttack: " + GameObject.Find(Tags.Muneco.ToString()).GetComponent<Muneco>().hasTypeAttack);
             }
+            Debug.Log("salio dee cheeckpower");
+        }
+        else
+        {
             checkPower = true;
+            Debug.Log("checkPower es " + checkPower);
         }
     }
 }

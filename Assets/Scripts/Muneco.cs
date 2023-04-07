@@ -10,7 +10,7 @@ public class Muneco : MonoBehaviour
     public bool hasArmor ;
     public bool hasTypeAttack;
 
-    [SerializeField] public  string[] powers;
+    public static string[] powers;
 
 
     private void Awake()
