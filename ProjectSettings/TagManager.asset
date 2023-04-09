@@ -54,3 +54,6 @@ TagManager:
   - name: Options
     uniqueID: 2975089485
     locked: 0
+  - name: Wizard
+    uniqueID: 3501454531
+    locked: 0

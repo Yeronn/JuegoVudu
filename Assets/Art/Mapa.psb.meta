@@ -1,0 +1,582 @@
+fileFormatVersion: 2
+guid: 92e7ffd3522d710478f1e64b2d74e5f2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 0
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Cueva del golem copia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 766
+      y: 2094
+      width: 403
+      height: 258
+    spriteID: 4909224eecd6b60478bd606a40d3d445
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 766, y: 2094}
+    spritePosition: {x: 2451, y: 917}
+  - name: Aldea copia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 2437
+      width: 391
+      height: 299
+    spriteID: feaebe8674eaff5418cbde29bbe20004
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 357, y: 2437}
+    spritePosition: {x: 2040, y: 906}
+  - name: Volcan
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2094
+      width: 345
+      height: 492
+    spriteID: 6918e9955f42d7b469ffbf63ec8147ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2094}
+    spritePosition: {x: 1652, y: 792}
+  - name: Reino
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 3277
+      width: 386
+      height: 243
+    spriteID: 234e222c3332c444f967a27e14e9af1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 357, y: 3277}
+    spritePosition: {x: 2874, y: 1374}
+  - name: arbol copia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2594
+      width: 343
+      height: 392
+    spriteID: 7d6c109afc1a25d44a85379b8d9dc806
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2594}
+    spritePosition: {x: 2479, y: 1361}
+  - name: sirena copia 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 3528
+      width: 180
+      height: 391
+    spriteID: db7e7843b6bb15240bee2e7280711556
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 357, y: 3528}
+    spritePosition: {x: 2131, y: 1357}
+  - name: "Monta\xF1as"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 2094
+      width: 401
+      height: 335
+    spriteID: 97662a9a844da244085fcca0a23ae21e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 357, y: 2094}
+    spritePosition: {x: 1624, y: 1366}
+  - name: icono tutorial
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 545
+      y: 3528
+      width: 167
+      height: 310
+    spriteID: 7e51c2a71d87e2e4797d686e02168370
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 545, y: 3528}
+    spritePosition: {x: 2172, y: 452}
+  - name: Capa 2 copia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2994
+      width: 263
+      height: 254
+    spriteID: c4fc6de4ad0e6714d9d292e6e198ae7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2994}
+    spritePosition: {x: 2536, y: 453}
+  - name: icono arbol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3256
+      width: 145
+      height: 304
+    spriteID: d165bdec4b6c9044790bccd5e5b2a663
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 3256}
+    spritePosition: {x: 3002, y: 452}
+  - name: "Monta\xF1as del este"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 2744
+      width: 393
+      height: 267
+    spriteID: 342b43e8b39559d42ba32d2a5a1ac33f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 357, y: 2744}
+    spritePosition: {x: 1654, y: 422}
+  - name: "Monta\xF1a Dragon copia 3"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 3019
+      width: 401
+      height: 250
+    spriteID: 706a7fd9c8656734bb3a6444358e4c1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 357, y: 3019}
+    spritePosition: {x: 2860, y: 917}
+  - name: Mapa copia
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1294
+      height: 2082
+    spriteID: 66c57ee3c38788343b481c39c1cb4947
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 100, y: 33}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Cueva del golem copia
+    spriteName: Cueva del golem copia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4909224eecd6b60478bd606a40d3d445
+    layerID: 21
+    mosaicPosition: {x: 766, y: 2094}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Aldea copia
+    spriteName: Aldea copia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: feaebe8674eaff5418cbde29bbe20004
+    layerID: 20
+    mosaicPosition: {x: 357, y: 2437}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Volcan
+    spriteName: Volcan
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6918e9955f42d7b469ffbf63ec8147ec
+    layerID: 8
+    mosaicPosition: {x: 4, y: 2094}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Reino
+    spriteName: Reino
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 234e222c3332c444f967a27e14e9af1d
+    layerID: 7
+    mosaicPosition: {x: 357, y: 3277}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: arbol copia
+    spriteName: arbol copia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7d6c109afc1a25d44a85379b8d9dc806
+    layerID: 16
+    mosaicPosition: {x: 4, y: 2594}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: sirena copia 2
+    spriteName: sirena copia 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db7e7843b6bb15240bee2e7280711556
+    layerID: 14
+    mosaicPosition: {x: 357, y: 3528}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Monta\xF1as"
+    spriteName: "Monta\xF1as"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 97662a9a844da244085fcca0a23ae21e
+    layerID: 3
+    mosaicPosition: {x: 357, y: 2094}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: icono tutorial
+    spriteName: icono tutorial
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7e51c2a71d87e2e4797d686e02168370
+    layerID: 35
+    mosaicPosition: {x: 545, y: 3528}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capa 2 copia
+    spriteName: Capa 2 copia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c4fc6de4ad0e6714d9d292e6e198ae7e
+    layerID: 42
+    mosaicPosition: {x: 4, y: 2994}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: icono arbol
+    spriteName: icono arbol
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d165bdec4b6c9044790bccd5e5b2a663
+    layerID: 36
+    mosaicPosition: {x: 4, y: 3256}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Monta\xF1as del este"
+    spriteName: "Monta\xF1as del este"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 342b43e8b39559d42ba32d2a5a1ac33f
+    layerID: 10
+    mosaicPosition: {x: 357, y: 2744}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Monta\xF1a Dragon copia 3"
+    spriteName: "Monta\xF1a Dragon copia 3"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 706a7fd9c8656734bb3a6444358e4c1b
+    layerID: 23
+    mosaicPosition: {x: 357, y: 3019}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mapa copia
+    spriteName: Mapa copia
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 66c57ee3c38788343b481c39c1cb4947
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

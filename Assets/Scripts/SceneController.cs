@@ -13,8 +13,10 @@ public class SceneController : MonoBehaviour
         Inventario,
         BattleScene1,
         BattleScene2,
+        BattleScene3,
         Fight1,
-        Fight2
+        Fight2,
+        Fight3
     }
     public void LoadScene(string sceneName)
     {
@@ -49,6 +51,10 @@ public class SceneController : MonoBehaviour
         else if (previousScene.Equals(Scenes.BattleScene2.ToString()))
         {
             SceneManager.LoadScene(Scenes.Fight2.ToString());
+        }
+        else if (previousScene.Equals(Scenes.BattleScene3.ToString()))
+        {
+            SceneManager.LoadScene(Scenes.Fight3.ToString());
         }
     }
 }
