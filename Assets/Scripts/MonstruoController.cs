@@ -25,10 +25,6 @@ public class MonstruoController : MonoBehaviour
     public GameObject backGround;
 
 
-    private void Awake()
-    {
-        //DontDestroyOnLoad(this);
-    }
 
     private void Start()
     {
