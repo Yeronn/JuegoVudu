@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 388813174}
   - component: {fileID: 388813173}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Trent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,8 +181,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 9ee80d9b38d759646aacf5dbb7fbf7c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1357579591}
+      - m_Target: {fileID: 1406755384}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
@@ -653,7 +653,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1357579590
+--- !u!1001 &1406755383
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -710,10 +710,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b003448b13e321b49b0136cfbded7a3a, type: 3}
---- !u!114 &1357579591 stripped
+--- !u!114 &1406755384 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3372290480570875229, guid: b003448b13e321b49b0136cfbded7a3a, type: 3}
-  m_PrefabInstance: {fileID: 1357579590}
+  m_PrefabInstance: {fileID: 1406755383}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1357579591}
+      - m_Target: {fileID: 1406755384}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5

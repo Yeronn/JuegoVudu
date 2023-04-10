@@ -69,6 +69,7 @@ public class DragDrop : MonoBehaviour
             if (hit.collider.CompareTag(Tags.Unselected.ToString())) /*"Unselected tag is not tracked"*/
             {
                 isDrag = false;
+                return;
             }
             mousePos = Input.mousePosition;
             mousePos.z = -cam.transform.position.z;

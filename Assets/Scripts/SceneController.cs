@@ -34,6 +34,16 @@ public class SceneController : MonoBehaviour
             {
                 Instantiate(munecoPrefab);
             }
+            else
+            {
+                GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).transform.position = new Vector3(0f,1f,0);
+            }
+        }
+
+        if (sceneName.Equals(Scenes.Fight1.ToString()))
+        {
+            //GameObject.FindGameObjectWithTag("Monstruo").transform.position = new Vector3(0.18f,1.18f,0);
+            
         }
     }
 
@@ -47,6 +57,9 @@ public class SceneController : MonoBehaviour
         if (previousScene.Equals(Scenes.BattleScene1.ToString()))
         {
             SceneManager.LoadScene(Scenes.Fight1.ToString());
+            Debug.Log("Posicionando monstruo 1");
+            monstruoPrefab.transform.position = new Vector3(0.18f, 1.18f, 0);
+            monstruoPrefab.GetComponent<SpriteRenderer>().flipX = true;
         }
         else if (previousScene.Equals(Scenes.BattleScene2.ToString()))
         {

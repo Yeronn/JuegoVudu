@@ -30,7 +30,7 @@ public class Option : MonoBehaviour
     private IEnumerator SetPosition(Tags option)
     {
         Debug.Log("Empezando corutina setposition");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.3f);
         Debug.Log($"Setting {option} tag ");
         transform.gameObject.tag = option.ToString();
 
@@ -66,7 +66,7 @@ public class Option : MonoBehaviour
         }
 
         transform.gameObject.tag = Tags.Unselected.ToString();
-        Invoke("SetInitialPosition",0.5f);
+        Invoke("SetInitialPosition",0.3f);
     }
 
     private void SetInitialPosition()
