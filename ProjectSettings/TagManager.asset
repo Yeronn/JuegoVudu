@@ -61,3 +61,6 @@ TagManager:
   - name: Wizard
     uniqueID: 3501454531
     locked: 0
+  - name: Animation
+    uniqueID: 341159361
+    locked: 0

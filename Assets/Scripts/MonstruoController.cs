@@ -23,6 +23,8 @@ public class MonstruoController : MonoBehaviour
     public Camera cam;
     public GameObject victoryPose;
     public GameObject backGround;
+    public GameObject fightAnimation;
+    public GameObject vfxAnimation;
 
 
 
@@ -83,14 +85,29 @@ public class MonstruoController : MonoBehaviour
 
     private void Victoria()
     {
-        gameObject.SetActive(false);
+        StartCoroutine("FightAnimation");
         Destroy(GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()));
         GameObject.Find("Mago").SetActive(false);
         backGround.SetActive(false);
-        cam.GetComponent<Camera>().backgroundColor = Color.black;
-        victoryPose.gameObject.SetActive(true);
+        //gameObject.SetActive(false);
         //winMessage.gameObject.SetActive(true);
-        Invoke("SceneMenu", 2f);
+        Invoke("SceneMenu", 5.31f);
+    }
+
+    private IEnumerator FightAnimation()
+    {
+        fightAnimation.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Debug.Log("Deesactivando laa aanimacion de fight");
+        fightAnimation.SetActive(false);
+        Debug.Log("Activando animacion de vfx");
+        vfxAnimation.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("Deesactivando laa aanimacion de vfx");
+        vfxAnimation.SetActive(false);
+        cam.GetComponent<Camera>().backgroundColor = Color.black;
+        gameObject.SetActive(false);
+        victoryPose.gameObject.SetActive(true);
     }
 
     private void SceneMenu()

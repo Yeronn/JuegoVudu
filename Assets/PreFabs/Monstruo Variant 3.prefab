@@ -41,15 +41,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -187282684116326426, guid: 6e0c29d203e7c3d4da19d5691f83f9cc, type: 3}
       propertyPath: debilidadesMonstruo3.Array.data[0]
-      value: Element
+      value: Agua
       objectReference: {fileID: 0}
     - target: {fileID: -187282684116326426, guid: 6e0c29d203e7c3d4da19d5691f83f9cc, type: 3}
       propertyPath: debilidadesMonstruo3.Array.data[1]
-      value: Armor
+      value: Algodon
       objectReference: {fileID: 0}
     - target: {fileID: -187282684116326426, guid: 6e0c29d203e7c3d4da19d5691f83f9cc, type: 3}
       propertyPath: debilidadesMonstruo3.Array.data[2]
-      value: TypeAttack
+      value: Aplastante
       objectReference: {fileID: 0}
     - target: {fileID: 3627410727235315864, guid: 6e0c29d203e7c3d4da19d5691f83f9cc, type: 3}
       propertyPath: m_Name

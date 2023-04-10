@@ -126,15 +126,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monstruo: 0
   debilidadesMonstruo1:
-  - Element
-  - Armor
-  - TypeAttack
+  - Electricidad
+  - Paja
+  - Cortante
   debilidadesMonstruo2:
-  - Element
-  - Armor
-  - TypeAttack
-  debilidadesMonstruo3: []
+  - Fuego
+  - Piedra
+  - Cortante
+  debilidadesMonstruo3:
+  - Agua
+  - Algodon
+  - Aplastante
   winMessage: {fileID: 0}
   cam: {fileID: 0}
   victoryPose: {fileID: 0}
   backGround: {fileID: 0}
+  fightAnimation: {fileID: 0}

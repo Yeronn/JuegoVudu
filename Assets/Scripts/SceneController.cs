@@ -33,16 +33,21 @@ public class SceneController : MonoBehaviour
             if (!GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()))
             {
                 Instantiate(munecoPrefab);
+                GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).transform.position = new Vector3(-0.82f, -0.53f, 0);
+
             }
             else
             {
-                GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).transform.position = new Vector3(0f,1f,0);
+                Debug.Log("Entro a la posicion correcta");
+                GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).transform.position = new Vector3(-0.82f,-0.53f,0);
             }
         }
     }
 
     public void PreviousScene()
     {
+        //GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).SetActive(true);
+        Destroy(GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()));
         SceneManager.LoadScene(previousScene);
     }
 
@@ -50,17 +55,17 @@ public class SceneController : MonoBehaviour
     {
         if (previousScene.Equals(Scenes.BattleScene1.ToString()))
         {
+            //GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).SetActive(true);
             SceneManager.LoadScene(Scenes.Fight1.ToString());
-            //Debug.Log("Posicionando monstruo 1");
-            //monstruoPrefab.transform.position = new Vector3(0.18f, 1.18f, 0);
-            //monstruoPrefab.GetComponent<SpriteRenderer>().flipX = true;
         }
         else if (previousScene.Equals(Scenes.BattleScene2.ToString()))
         {
+            //GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).SetActive(true);
             SceneManager.LoadScene(Scenes.Fight2.ToString());
         }
         else if (previousScene.Equals(Scenes.BattleScene3.ToString()))
         {
+            //GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).SetActive(true);
             SceneManager.LoadScene(Scenes.Fight3.ToString());
         }
     }
