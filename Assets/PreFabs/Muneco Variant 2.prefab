@@ -1,23 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7523958780061877600
+--- !u!1001 &4372494891324566170
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2626508943953115572, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2626508943953115573, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2626508943953115573, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.91
+      value: -2.49
       objectReference: {fileID: 0}
     - target: {fileID: 2626508943953115573, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2
+      value: -1.86
       objectReference: {fileID: 0}
     - target: {fileID: 2626508943953115573, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
       propertyPath: m_LocalPosition.z
@@ -54,6 +58,22 @@ PrefabInstance:
     - target: {fileID: 2626508943953115575, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
       propertyPath: m_Name
       value: Muneco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626508943953115576, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3016288
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626508943953115576, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
+      propertyPath: m_Size.y
+      value: 2.1019888
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626508943953115576, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.44196165
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626508943953115576, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.28451544
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99b95774ef259374ca90f6cbee70b126, type: 3}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.U2D;
 
 public class SceneController : MonoBehaviour
 {
@@ -23,12 +24,13 @@ public class SceneController : MonoBehaviour
         previousScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(sceneName);
 
+
         if (sceneName.Equals(Scenes.Menu.ToString()))
         {
             Destroy(GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()));
         }
 
-        if (sceneName.Equals(Scenes.Inventario.ToString()))
+        else if (sceneName.Equals(Scenes.Inventario.ToString()))
         {
             if (!GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()))
             {
@@ -42,6 +44,12 @@ public class SceneController : MonoBehaviour
                 GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).transform.position = new Vector3(-0.82f,-0.53f,0);
             }
         }
+        else
+        {
+            GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).transform.position = new Vector3(-0.82f, -0.53f, 0);
+            GameObject.FindGameObjectWithTag(Tags.Muneco.ToString()).GetComponent<SpriteRenderer>().flipX = true;
+        }
+
     }
 
     public void PreviousScene()
